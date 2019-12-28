@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+</head>
+<body>
+    <header>
+        <span class="logo"><a href="index.html"><i class="fa fa-star"></i></a></span>                
+        <span class="cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span class="cartcount"></span></a></span>
+        <span class="searchbtn"><i class="fa fa-search"></i></span>    
+        <div class="searchbox">
+            <input type="text" placeholder="Search...">             
+        </div>         
+    </header>
+
+    <div class="sidebar">
+
+    </div>
+
+    <div class="shoppinglist">
+        <div class="sort-options">
+            <span class="sort-heading">Sort By:</span>
+            <span class="sort_option" data-sort="highlow">price -- High Low</span>
+            <span class="sort_option" data-sort="lowhigh">price -- Low High</span>
+            <span class="sort_option" data-sort="discount">Discount</span>
+        </div>
+        <div class="mobile-sort-options">
+            <span class="sort-heading mobile-sort"><i class="fa fa-sort"></i> Sort</span>
+            <span class="sort-heading"><i class="fa fa-filter"></i> Filter</span>
+        </div>
+        <div class="itemsList">
+
+        </div>
+    </div>
+<div class="modal-overlay">    
+</div>
+<div class="messagePop">
+    <div class="heading">Sort Options</div>
+    <div class="msg-body">
+        <label for="hightolow">            
+            <input type="radio" id="hightolow" name="filter" value="highlow">
+            Price -- High Low
+        </label></br>
+        <label for="lowtohigh">
+            <input type="radio" id="lowtohigh" name="filter" value="lowhigh">
+            Price -- Low High            
+        </label></br>
+        <label for="discount">            
+            <input type="radio" id="discount" name="filter" value="discount">
+            Discount
+        </label>
+    </div>
+    <div class="msg-action">
+        <button class="cancelsort">Cancel</button>
+        <button class="applysort">Apply</button>
+    </div>
+</div>
+
+
+<footer>
+    <div>
+        <span>&#9400;copyright</span>
+    </div>
+</footer>
+    <script src="lib/js/app-min.js"></script>
+</body>
+</html>
